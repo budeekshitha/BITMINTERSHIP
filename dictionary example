@@ -1,0 +1,23 @@
+country_dict = {'AU':"Australia", 'CA':"Canada", 'IN':"India", 'US':"America"}
+
+def display_options():
+    print("SELECT AN OPTION")
+    print("VIEW: view country name")
+    print("ADD: Add country")
+    print("DELETE: Delete country")
+    print("EXIT: Exit the prigram")
+    
+def view_fun():
+    country_codes = country_dict.keys()
+    for code in country_codes:
+        print(code,end=' ')
+    print()
+    country_code_input = input("Enter country code: ")
+    print("Country is ", country_dict[country_code_input])
+    print()
+    
+while(True):
+    display_options()
+    user_input=input("Your choice:")
+    if(user_input=='View'):
+        view_fun()
