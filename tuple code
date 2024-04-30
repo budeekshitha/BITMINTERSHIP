@@ -1,0 +1,10 @@
+album = "Aashiqui 2",2013,'Arjith singh',((1,"Tum hi ho"), (2,"Chahun Mai ya"),(3,"Mere Ashiqui"))
+title,year,singer,songs = album
+print("Title: ", title)
+print("Year: ", year)
+print("Singer: ", singer)
+for song in songs:
+    num = song[0]
+    song_name = song[1]
+    print("/t Song Number: ", num, "Song Name: ", song_name)    
+    
